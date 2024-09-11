@@ -3,33 +3,50 @@
   <head>
     <title>C.A. Gurley - Professional Site</title>
     <base href=".">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body id="content">
     <header id="header" class="row">
       <div class="col col-12">
-        <div>
-          <span class="callout callout-warning">Under construction; please pardon my dust.</span>
+        <div class="row">
+          <svg class="warning-icon bookend-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.00 13.40 100.00 86.60">
+            <polygon points="0.00,100.00 100.00,100.00 50.00,13.40" class="warning-icon-border" />
+            <polygon points="7.79,95.50 92.21,95.50 50.00,22.40" class="warning-icon-bg" />
+            <polygon points="45.00,91.00 45.00,81.00 55.00,81.00 55.00,91.00" class="warning-icon-content" />
+            <polygon points="45.00,76.50 45.00,39.50 55.00,39.50 55.00,76.50" class="warning-icon-content" />
+          </svg>
+          <span class="callout">Pardon the appearance: under construction.</span>
+          <svg class="warning-icon bookend-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.00 13.40 100.00 86.60">
+            <polygon points="0.00,100.00 100.00,100.00 50.00,13.40" class="warning-icon-border" />
+            <polygon points="7.79,95.50 92.21,95.50 50.00,22.40" class="warning-icon-bg" />
+            <polygon points="45.00,91.00 45.00,81.00 55.00,81.00 55.00,91.00" class="warning-icon-content" />
+            <polygon points="45.00,76.50 45.00,39.50 55.00,39.50 55.00,76.50" class="warning-icon-content" />
+          </svg>
         </div>
       </div>
     </header>
     <div id="main-content" class="row">
       <div class="col col-12">
-        <h1 class="title">C.A. Gurley</h1>
-        <h2>Experienced analyst and developer and recent M.S. in C.S. graduate seeking career transition.</h2>
-        <!-- <p>Needing to fill a job with any computer science affinity? Message me on LinkedIn! Feel free to check out my GitHub, too (selected projects below).</p> -->
+        <div id="inner-content">
+          <h1 class="title">C.A. Gurley</h1>
+          <h2 class="subtitle">Experienced analyst and developer and recent M.S.-in-C.S. graduate seeking career transition.</h2>
+          <!-- <p>Needing to fill a job with any computer science affinity? Message me on LinkedIn! Feel free to check out my GitHub, too (selected projects below).</p> -->  
+        </div>
       </div>
     </div>
     <!-- <div class="scrollbox"></div> -->
     <footer id="footer" class="row">
-      <div class="col logo-container">
-        <a id="li" class="logo-link" href="https://www.linkedin.com/in/cagurley/">
+      <div id="fc-left" class="col logo-container">
+        <a id="li" class="logo-link" href="https://www.linkedin.com/in/cagurley">
           <img class="logo" src="./assets/external/LI-Logo.png">
         </a>
       </div>
-      <div class="col logo-container">
+      <div id="fc-right" class="col logo-container">
         <a class="logo-link" href="https://github.com/cagurley">
-          <img class="logo" src="./assets/external/GitHub_Logo.png">
+          <img class="logo" src="./assets/external/GitHub_Logo_full-crop.png">
         </a>
       </div>
     </footer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright C.A. Gurley -->
+<svg class="warning-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0.00 13.40 100.00 86.60">
+  <polygon points="0.00,100.00 100.00,100.00 50.00,13.40" class="warning-icon-border" />
+  <polygon points="7.79,95.50 92.21,95.50 50.00,22.40" class="warning-icon-bg" />
+  <polygon points="45.00,91.00 45.00,81.00 55.00,81.00 55.00,91.00" class="warning-icon-content" />
+  <polygon points="45.00,76.50 45.00,39.50 55.00,39.50 55.00,76.50" class="warning-icon-content" />
+</svg>
