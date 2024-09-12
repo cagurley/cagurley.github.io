@@ -1,7 +1,9 @@
 :root {
-  --header-height: 4em;
-  --footer-height: 100px;
+  --hf-padding: 1vh;
+  --header-height: 5vh;
+  --callout-height: 1vh;
   --logo-container-border: 1px solid #808080;
+  --footer-height: min(20vh, calc((338px + var(--hf-padding)) * 2));
 }
 
 * {
@@ -27,7 +29,7 @@ img {
 
 #header, #footer {
   background-color: #ccc;
-  padding: 10px;
+  padding: var(--hf-padding);
 }
 
 #header {
@@ -45,6 +47,10 @@ img {
 
 #footer {
   height: var(--footer-height);
+}
+
+#footer * {
+  height: 100%;
 }
 
 .row {
@@ -72,9 +78,9 @@ img {
 }
 
 .warning-icon {
-  height: calc(var(--header-height) / 2);
-  padding-left: calc(var(--header-height) / 4);
-  padding-right: calc(var(--header-height) / 4);
+  height: calc(var(--callout-height) * 2);
+  padding-left: var(--callout-height);
+  padding-right: var(--callout-height);
 }
 
 .warning-icon-border {
@@ -91,7 +97,7 @@ img {
 
 .callout {
   display: inline-block;
-  font-size: 1em;
+  font-size: var(--callout-height);
   font-weight: 200;
   font-style: italic;
   background-color: cornsilk;
@@ -101,18 +107,20 @@ img {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3em;
   padding: 0.5rem;
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
   padding: 0.5rem;
 }
 
-.logo-container, .logo-link {
-  height: inherit;
+.logo-container {
+  height: 50%!important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .logo-link {
@@ -126,10 +134,48 @@ img {
   max-height: 100%;
 }
 
-#fc-left {
-  border-right: var(--logo-container-border)
+#fc-first {
+  padding-bottom: 10px;
+  border-bottom: var(--logo-container-border)
 }
 
-#fc-right {
-  border-left: var(--logo-container-border)
+#fc-last {
+  padding-top: 10px;
+  border-top: var(--logo-container-border)
+}
+
+@media all and (min-width: 768px) {
+  :root {
+    --header-height: 8vh;
+    --callout-height: 1.6vh;
+    --footer-height: min(10vh, calc(338px + var(--hf-padding)));
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+  }
+
+  .logo-container {
+    height: 100%!important;
+  }
+
+  #fc-first {
+    padding-bottom: 0;
+    border-right: var(--logo-container-border);
+    border-bottom: none;
+  }
+  
+  #fc-last {
+    padding-top: 0;
+    border-top: none;
+    border-left: var(--logo-container-border)
+  }
 }
