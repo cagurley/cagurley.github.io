@@ -6,6 +6,14 @@
   --footer-height: min(20vh, calc((338px + var(--hf-padding)) * 2));
 }
 
+@keyframes warning-flash {
+  0% {opacity: 1}
+  25% {opacity: 1}
+  50% {opacity: 0}
+  75% {opacity: 1}
+  100% {opacity: 1}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -81,6 +89,9 @@ img {
   height: calc(var(--callout-height) * 2);
   padding-left: var(--callout-height);
   padding-right: var(--callout-height);
+  animation-name: warning-flash;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .warning-icon-border {
